@@ -12,6 +12,8 @@
 html,
 body {
 	@apply bg-white dark:bg-gray-950;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 
 	@media (prefers-color-scheme: dark) {
 		color-scheme: dark;
@@ -51,6 +53,12 @@ body {
 	--sidebar-accent-foreground: oklch(0.205 0 0);
 	--sidebar-border: oklch(0.922 0 0);
 	--sidebar-ring: oklch(0.708 0 0);
+	
+	/* Pharmacy Theme Colors */
+	--pharmacy-emerald: oklch(0.646 0.222 153.8);
+	--pharmacy-emerald-light: oklch(0.8 0.15 153.8);
+	--pharmacy-blue: oklch(0.5 0.2 240);
+	--pharmacy-blue-light: oklch(0.75 0.15 240);
 }
 
 .dark {
