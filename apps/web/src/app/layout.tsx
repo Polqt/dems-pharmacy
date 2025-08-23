@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../index.css";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import Providers from "@/components/providers";
 
 const geistSans = Geist({
@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "dems-pharmacy",
-	description: "dems-pharmacy",
+	title: "DEMS Pharmacy",
+	description: "DEMS Pharmacy",
 };
 
 export default function RootLayout({
@@ -30,10 +30,8 @@ export default function RootLayout({
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Providers>
-					<div className="min-h-screen">
-						<Header />
-						<main>{children}</main>
-					</div>
+					<Header />
+					{children}
 				</Providers>
 			</body>
 		</html>
